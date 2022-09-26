@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сinema Minus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="egelo.css">
+    <link rel="stylesheet" href="responsiv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="header_shadow">
+            <div class="header_head_container">
+                <img src="./img/Logo.png" alt="logo">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">TV Show</a>
+                        </li>
+                        <li>
+                            <a href="#">Movies</a>
+                        </li>
+                        <li>
+                            <a href="#">Upcoming</a>
+                        </li>
+                        <li>
+                            <a href="#">Trailers</a>
+                        </li>
+                        <li>
+                            <a href="#">My list</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="search_container">
+                    <div class="search_box">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.72728 12.4546C9.89037 12.4546 12.4546 9.89037 12.4546 6.72728C12.4546 3.56419 9.89037 1 6.72728 1C3.56419 1 1 3.56419 1 6.72728C1 9.89037 3.56419 12.4546 6.72728 12.4546Z"
+                                stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M15 15L10.7783 10.7783" stroke="white" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <input placeholder="Search For Movies..." type="text">
+
+                    </div>
+                    <button>
+                        <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.648 10.7018L14.3 10.4275C14.2065 10.3541 14.1309 10.261 14.079 10.1551C14.0271 10.0493 14.0001 9.93338 14 9.81594V6.64863C13.9995 5.28749 13.5172 3.96867 12.6353 2.91713C11.7534 1.86558 10.5265 1.14645 9.164 0.882386C9.09756 0.629863 8.94736 0.406144 8.73701 0.246413C8.52667 0.0866817 8.26811 0 8.002 0C7.73589 0 7.47733 0.0866817 7.26699 0.246413C7.05664 0.406144 6.90644 0.629863 6.84 0.882386C5.47672 1.14565 4.24894 1.86444 3.36624 2.91606C2.48354 3.96768 2.00065 5.28694 2 6.64863V9.81594C1.99993 9.93338 1.97293 10.0493 1.921 10.1551C1.86908 10.261 1.79355 10.3541 1.7 10.4275L1.352 10.7018C0.931712 11.0311 0.592092 11.4485 0.35812 11.9234C0.124147 12.3983 0.00177343 12.9185 0 13.4458V14.0965C0 14.5124 0.168571 14.9112 0.468629 15.2052C0.768687 15.4993 1.17565 15.6645 1.6 15.6645H4.904C5.08432 16.3339 5.48561 16.926 6.04528 17.3484C6.60495 17.7709 7.29155 18 7.998 18C8.70445 18 9.39105 17.7709 9.95072 17.3484C10.5104 16.926 10.9117 16.3339 11.092 15.6645H14.4C14.8243 15.6645 15.2313 15.4993 15.5314 15.2052C15.8314 14.9112 16 14.5124 16 14.0965V13.4536C15.9994 12.925 15.8776 12.4033 15.6436 11.9269C15.4096 11.4506 15.0693 11.032 14.648 10.7018ZM8 16.4485C7.72078 16.4468 7.44686 16.3736 7.20546 16.2361C6.96407 16.0985 6.76361 15.9015 6.624 15.6645H9.38C9.24005 15.9021 9.03896 16.0995 8.7968 16.237C8.55465 16.3746 8.2799 16.4475 8 16.4485ZM14.4 14.0965H1.6V13.4536C1.60043 13.1599 1.66823 12.87 1.7984 12.6054C1.92856 12.3407 2.11776 12.1082 2.352 11.9249L2.7 11.6505C2.98065 11.4303 3.20723 11.1511 3.36301 10.8336C3.51878 10.516 3.59978 10.1683 3.6 9.81594V6.64863C3.6 5.50503 4.06357 4.40827 4.88873 3.59962C5.71389 2.79098 6.83305 2.33669 8 2.33669C9.16695 2.33669 10.2861 2.79098 11.1113 3.59962C11.9364 4.40827 12.4 5.50503 12.4 6.64863V9.81594C12.3996 10.1689 12.4803 10.5175 12.6361 10.8357C12.7919 11.154 13.0188 11.4338 13.3 11.6544L13.648 11.9288C13.8817 12.1117 14.0706 12.3436 14.2007 12.6075C14.3309 12.8714 14.399 13.1606 14.4 13.4536V14.0965Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                    <button>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 0C4.48625 0 0 4.48625 0 10C0 12.9546 1.28917 15.6133 3.33333 17.4454V17.4525L3.47833 17.5775C3.50375 17.5996 3.53167 17.6179 3.5575 17.6396C3.73708 17.7912 3.92208 17.9367 4.11208 18.0758C4.16333 18.1133 4.21458 18.1496 4.26667 18.1858C4.46833 18.3275 4.67458 18.4625 4.88625 18.5892C4.92167 18.6104 4.95792 18.6304 4.99333 18.6508C5.22542 18.7858 5.4625 18.9129 5.70583 19.0292C5.70833 19.0304 5.71083 19.0312 5.71333 19.0325C6.23375 19.2804 6.77958 19.4833 7.34458 19.6392C7.355 19.6421 7.36542 19.6454 7.37583 19.6479C7.64292 19.7208 7.91458 19.7821 8.19 19.8325C8.21583 19.8371 8.24125 19.8417 8.26708 19.8463C8.53292 19.8929 8.80208 19.93 9.075 19.9554C9.10625 19.9583 9.1375 19.96 9.16833 19.9625C9.44292 19.9854 9.71958 20 10 20C10.2804 20 10.5571 19.9854 10.8317 19.9625C10.8629 19.96 10.8942 19.9583 10.925 19.9554C11.1979 19.9304 11.4671 19.8929 11.7329 19.8463C11.7587 19.8417 11.7842 19.8371 11.81 19.8325C12.0854 19.7821 12.3571 19.7208 12.6242 19.6479C12.6346 19.645 12.645 19.6421 12.6554 19.6392C13.2204 19.4833 13.7662 19.2804 14.2867 19.0325C14.2892 19.0312 14.2917 19.0304 14.2942 19.0292C14.5375 18.9129 14.7746 18.7854 15.0067 18.6508C15.0425 18.63 15.0783 18.6104 15.1137 18.5892C15.3258 18.4625 15.5321 18.3271 15.7333 18.1858C15.785 18.1496 15.8367 18.1133 15.8879 18.0758C16.0779 17.9367 16.2629 17.7912 16.4425 17.6396C16.4683 17.6179 16.4962 17.5996 16.5217 17.5775L16.6667 17.4525V17.4454C18.7108 15.6129 20 12.9546 20 10C20 4.48625 15.5138 0 10 0ZM10 10C8.16208 10 6.66667 8.50458 6.66667 6.66667C6.66667 4.82875 8.16208 3.33333 10 3.33333C11.8379 3.33333 13.3333 4.82875 13.3333 6.66667C13.3333 8.50458 11.8379 10 10 10ZM11.25 10.8333C13.7771 10.8333 15.8333 12.8896 15.8333 15.4167V17.0658C15.8158 17.0804 15.7975 17.0938 15.78 17.1083C15.6154 17.2421 15.4467 17.3692 15.2742 17.4908C15.2358 17.5179 15.1983 17.5458 15.16 17.5721C14.9737 17.6992 14.7825 17.8183 14.5879 17.9312C14.5525 17.9521 14.5167 17.9725 14.4808 17.9929C14.2767 18.1075 14.0687 18.215 13.8567 18.3133C13.8346 18.3237 13.8121 18.3337 13.7896 18.3438C13.0975 18.6583 12.3683 18.8862 11.6179 19.0212C11.5942 19.0254 11.5704 19.03 11.5467 19.0342C11.3104 19.0746 11.0721 19.1058 10.8321 19.1279C10.7992 19.1308 10.7658 19.1329 10.7325 19.1354C10.4896 19.1542 10.2454 19.1667 10 19.1667C9.75458 19.1667 9.51042 19.1542 9.2675 19.1346C9.23458 19.1321 9.20125 19.13 9.16792 19.1271C8.92792 19.105 8.68958 19.0742 8.45333 19.0333C8.42958 19.0292 8.40583 19.025 8.38208 19.0204C7.63167 18.8854 6.9025 18.6575 6.21042 18.3429C6.18792 18.3325 6.16542 18.3229 6.14333 18.3125C5.93125 18.2142 5.72333 18.1067 5.51917 17.9921C5.48333 17.9717 5.44792 17.9513 5.41208 17.9304C5.2175 17.8179 5.02625 17.6983 4.84 17.5713C4.80125 17.545 4.76375 17.5171 4.72583 17.49C4.55333 17.3683 4.38458 17.2417 4.22 17.1075C4.2025 17.0933 4.18417 17.0796 4.16667 17.065V15.4167C4.16667 12.8896 6.22292 10.8333 8.75 10.8333H11.25ZM16.6667 16.2817V15.4167C16.6667 12.8037 14.8067 10.6171 12.3417 10.1104C13.4421 9.36 14.1667 8.09625 14.1667 6.66667C14.1667 4.36917 12.2975 2.5 10 2.5C7.7025 2.5 5.83333 4.36917 5.83333 6.66667C5.83333 8.09625 6.55792 9.36 7.65833 10.1104C5.19333 10.6171 3.33333 12.8037 3.33333 15.4167V16.2817C1.785 14.6396 0.833333 12.4296 0.833333 10C0.833333 4.94542 4.94542 0.833333 10 0.833333C15.0546 0.833333 19.1667 4.94542 19.1667 10C19.1667 12.4296 18.215 14.6396 16.6667 16.2817Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="header_foot_container">
+                <button><i class="fa-regular fa-bell"></i></button>
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button><i class="fa-regular fa-user"></i></button>
+                <button><i class="fa-solid fa-bars"></i></button>
+
+            </div>
+
+
+            <div class="header_text_container">
+                <h1 class="main_title">THE LOST CITY</h1>
+                <ul class="film_types_container">
+                    <li>Action-Adventure</li>
+                    <li>Comedy</li>
+                    <li>Action</li>
+                </ul>
+                <p class="header_text">
+                    Alan, who is secretly enamored with Loretta, witnesses her kidnapping. He recruits Jack Trainer, a
+                    former
+
+                    Navy SEAL turned CIA operative, to meet him on the island and coordinate a rescueattempt.Jack, with
+                    no assistance from Alan.
+                </p>
+                <ul class="film_information">
+                    <li><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.1116 17.3885C18.4611 14.8457 19.9311 9.23792 17.3884 4.88845C14.8457 0.538988 9.23787 -0.931067 4.8884 1.61165C0.538935 4.15437 -0.931121 9.76219 1.6116 14.1117C4.15432 18.4611 9.76213 19.9312 14.1116 17.3885ZM5.2727 2.26902C9.25996 -0.0619514 14.4001 1.2855 16.731 5.27275C19.062 9.26001 17.7146 14.4001 13.7273 16.7311C9.74004 19.0621 4.59994 17.7146 2.26897 13.7274C-0.0620046 9.74009 1.28544 4.59999 5.2727 2.26902Z"
+                                fill="white" />
+                        </svg>
+
+                        164 min.
+                    </li>
+                    <li><svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1 13.8404H4.70807L9.78651 15.9363C10.3105 16.158 10.8949 15.7751 10.8949 15.1907V1.80935C10.8949 1.22493 10.3105 0.842027 9.78651 1.06371L4.70807 3.15957H1.08061V11.3214"
+                                stroke="white" stroke-width="1.3" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M14.3413 4.4292C15.3892 5.47713 16.0341 6.90796 16.0341 8.50002C16.0341 10.0921 15.3892 11.5431 14.3413 12.5708"
+                                stroke="white" stroke-width="1.3" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M16.7593 2.01074C18.4118 3.66325 19.4597 5.96064 19.4597 8.49987C19.4597 11.0391 18.4319 13.3365 16.7593 14.989"
+                                stroke="white" stroke-width="1.3" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        Subtitles
+                    </li>
+                    <li><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="3" cy="3" r="3" fill="white" />
+                        </svg>
+                        <b>imdb:</b>
+                        9.1/10
+                    </li>
+                </ul>
+                <div class="header_btn_container">
+                    <button>
+                        <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.54455 18.8278L1.67587 18.7209L11.4622 10.6459C11.7936 10.3728 12 9.96313 12 9.50594C12 9.04875 11.7874 8.63906 11.4622 8.36594L1.69463 0.296875L1.53205 0.160312C1.37572 0.0593748 1.18812 0 0.988015 0C0.443981 0 0 0.439375 0 0.985625V18.0144C0 18.5606 0.443981 19 0.988015 19C1.19437 19 1.38822 18.9347 1.54455 18.8278Z"
+                                fill="white" />
+                        </svg>
+
+                        Watch Now
+                    </button>
+                    <button>
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 1V17" stroke="#C00511" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M1 9H17" stroke="#C00511" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+
+                        Add List
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="section_header">
+                    <h2>Continue Watching</h2>
+                    <span></span>
+                </div>
+                <div class="view_all_btn">
+                    <a href="#">View all</a>
+                </div>
+
+                <div class="video_grid_container">
+                    <div class="video_card">
+
+                        <video controls src=""></video>
+                        <h3 class="card_title">Jumanji</h3>
+                    </div>
+                    <div class="video_card">
+
+                        <video controls src=""></video>
+                        <h3 class="card_title">Marry Me</h3>
+                    </div>
+                    <div class="video_card">
+
+                        <video controls src=""></video>
+                        <h3 class="card_title">Kimi (HBO Max)</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="section_header">
+                    <h2>Popular Movies 2022</h2>
+                    <span></span>
+                </div>
+                <div class="view_all_btn">
+                    <a href="#">View all</a>
+                </div>
+            </div>
+            <div class="slider_main_container">
+                <svg class="slider_svg" width="15" height="29" viewBox="0 0 15 29" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1.83468 10.1092L11.433 0.602298C11.8248 0.216529 12.3548 0 12.9072 0C13.4596 0 13.9896 0.216529 14.3814 0.602298C14.5774 0.794845 14.733 1.02392 14.8392 1.27632C14.9453 1.52872 15 1.79944 15 2.07287C15 2.3463 14.9453 2.61702 14.8392 2.86942C14.733 3.12181 14.5774 3.35089 14.3814 3.54344L4.76225 13.0297C4.56626 13.2222 4.41069 13.4513 4.30453 13.7037C4.19836 13.9561 4.1437 14.2268 4.1437 14.5002C4.1437 14.7737 4.19836 15.0444 4.30453 15.2968C4.41069 15.5492 4.56626 15.7783 4.76225 15.9708L14.3814 25.457C14.7752 25.8443 14.9975 26.3707 14.9995 26.9203C15.0015 27.4699 14.7829 27.9978 14.3919 28.3878C14.0009 28.7778 13.4695 28.998 12.9146 29C12.3597 29.0019 11.8267 28.7854 11.433 28.3982L1.83468 18.8912C0.659876 17.7262 0 16.1469 0 14.5002C0 12.8536 0.659876 11.2743 1.83468 10.1092Z"
+                        fill="white" fill-opacity="0.52" />
+                </svg>
+                <div class="slider_inner_container">
+                    <div class="slider_card">
+                        <div class="slider_img_container">
+                            <img src="https://avatars.mds.yandex.net/i?id=0109f57ff2f67fcc8f8f75b56d5a29da-4901917-images-thumbs&n=13"
+                                alt="">
+                            <span>New</span>
+                        </div>
+                        <h3 class="card_title">Escobar</h3>
+
+                    </div>
+                    <div class="slider_card">
+                        <div class="slider_img_container">
+                            <img src="https://avatars.mds.yandex.net/i?id=78971a0a4e6a7a688fddd3ac378a36df-4818428-images-thumbs&n=13"
+                                alt="">
+                            <span>New</span>
+                        </div>
+                        <h3 class="card_title">Messi</h3>
+
+                    </div>
+                    <div class="slider_card">
+                        <div class="slider_img_container">
+                            <img src="https://avatars.mds.yandex.net/i?id=66ed405087418c7b8abe71f0f02fbf9a-5681290-images-thumbs&n=13"
+                                alt="">
+                            <span>New</span>
+                        </div>
+                        <h3 class="card_title">Trump</h3>
+
+                    </div>
+                    <div class="slider_card">
+                        <div class="slider_img_container">
+                            <img src="https://avatars.mds.yandex.net/i?id=55ab2f9caf0dbfd2bd7e43ae2f0f3dc7-5912078-images-thumbs&n=13"
+                                alt="">
+                            <span>New</span>
+                        </div>
+                        <h3 class="card_title">Zelenskiy</h3>
+
+                    </div>
+                </div>
+                <svg class="slider_svg" width="15" height="29" viewBox="0 0 15 29" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13.1653 10.1092L3.56705 0.602298C3.17525 0.216529 2.64524 0 2.0928 0C1.54035 0 1.01035 0.216529 0.618552 0.602298C0.422554 0.794845 0.266987 1.02392 0.160823 1.27632C0.0546589 1.52872 0 1.79944 0 2.07287C0 2.3463 0.0546589 2.61702 0.160823 2.86942C0.266987 3.12181 0.422554 3.35089 0.618552 3.54344L10.2377 13.0297C10.4337 13.2222 10.5893 13.4513 10.6955 13.7037C10.8016 13.9561 10.8563 14.2268 10.8563 14.5002C10.8563 14.7737 10.8016 15.0444 10.6955 15.2968C10.5893 15.5492 10.4337 15.7783 10.2377 15.9708L0.618552 25.457C0.224785 25.8443 0.00246735 26.3707 0.000506541 26.9203C-0.00145427 27.4699 0.217104 27.9978 0.608098 28.3878C0.999093 28.7778 1.5305 28.998 2.08541 29C2.64032 29.0019 3.17328 28.7854 3.56705 28.3982L13.1653 18.8912C14.3401 17.7262 15 16.1469 15 14.5002C15 12.8536 14.3401 11.2743 13.1653 10.1092Z"
+                        fill="white" fill-opacity="0.52" />
+                </svg>
+
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="section_header">
+                    <h2>Popular People 2022</h2>
+                    <span></span>
+                </div>
+                <div class="view_all_btn">
+                    <a href="#">View all</a>
+                </div>
+            </div>
+            <div class="slider_main_container">
+                <svg class="slider_svg" width="15" height="29" viewBox="0 0 15 29" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1.83468 10.1092L11.433 0.602298C11.8248 0.216529 12.3548 0 12.9072 0C13.4596 0 13.9896 0.216529 14.3814 0.602298C14.5774 0.794845 14.733 1.02392 14.8392 1.27632C14.9453 1.52872 15 1.79944 15 2.07287C15 2.3463 14.9453 2.61702 14.8392 2.86942C14.733 3.12181 14.5774 3.35089 14.3814 3.54344L4.76225 13.0297C4.56626 13.2222 4.41069 13.4513 4.30453 13.7037C4.19836 13.9561 4.1437 14.2268 4.1437 14.5002C4.1437 14.7737 4.19836 15.0444 4.30453 15.2968C4.41069 15.5492 4.56626 15.7783 4.76225 15.9708L14.3814 25.457C14.7752 25.8443 14.9975 26.3707 14.9995 26.9203C15.0015 27.4699 14.7829 27.9978 14.3919 28.3878C14.0009 28.7778 13.4695 28.998 12.9146 29C12.3597 29.0019 11.8267 28.7854 11.433 28.3982L1.83468 18.8912C0.659876 17.7262 0 16.1469 0 14.5002C0 12.8536 0.659876 11.2743 1.83468 10.1092Z"
+                        fill="white" fill-opacity="0.52" />
+                </svg>
+                <div class="slider_inner_container">
+                    <div class="slider_card">
+                        <div class="slider_img_container">
+                            <img src="https://avatars.mds.yandex.net/i?id=bd7891ef0a178df73b24704de9de06b9-4326270-images-thumbs&n=13"
+                                alt="">
+                            <span>New</span>
+                        </div>
+                        <h3 class="card_title"></h3>
+
+                    </div>
+                    <div class="slider_card">
+                        <div class="slider_img_container">
+                            <img src="https://avatars.mds.yandex.net/i?id=fe45d8c08892e77e039e0f94947375e5-5240721-images-thumbs&n=13"
+                                alt="">
+                            <span>New</span>
+                        </div>
+                        <h3 class="card_title">The 355</h3>
+
+                    </div>
+                    <div class="slider_card">
+                        <div class="slider_img_container">
+                            <img src="https://avatars.mds.yandex.net/i?id=509b16a8159c0a384d671e77bcad87e8-5883346-images-thumbs&n=13"
+                                alt="">
+                            <span>New</span>
+                        </div>
+                        <h3 class="card_title">The 355</h3>
+
+                    </div>
+                    <div class="slider_card">
+                        <div class="slider_img_container">
+                            <img src="https://avatars.mds.yandex.net/i?id=72f706fb3a9cc4efd6a7aa252323c7c5-5578546-images-thumbs&n=13"
+                                alt="">
+                            <span>New</span>
+                        </div>
+                        <h3 class="card_title">The 355</h3>
+
+                    </div>
+                </div>
+                <svg class="slider_svg" width="15" height="29" viewBox="0 0 15 29" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13.1653 10.1092L3.56705 0.602298C3.17525 0.216529 2.64524 0 2.0928 0C1.54035 0 1.01035 0.216529 0.618552 0.602298C0.422554 0.794845 0.266987 1.02392 0.160823 1.27632C0.0546589 1.52872 0 1.79944 0 2.07287C0 2.3463 0.0546589 2.61702 0.160823 2.86942C0.266987 3.12181 0.422554 3.35089 0.618552 3.54344L10.2377 13.0297C10.4337 13.2222 10.5893 13.4513 10.6955 13.7037C10.8016 13.9561 10.8563 14.2268 10.8563 14.5002C10.8563 14.7737 10.8016 15.0444 10.6955 15.2968C10.5893 15.5492 10.4337 15.7783 10.2377 15.9708L0.618552 25.457C0.224785 25.8443 0.00246735 26.3707 0.000506541 26.9203C-0.00145427 27.4699 0.217104 27.9978 0.608098 28.3878C0.999093 28.7778 1.5305 28.998 2.08541 29C2.64032 29.0019 3.17328 28.7854 3.56705 28.3982L13.1653 18.8912C14.3401 17.7262 15 16.1469 15 14.5002C15 12.8536 14.3401 11.2743 13.1653 10.1092Z"
+                        fill="white" fill-opacity="0.52" />
+                </svg>
+
+            </div>
+
+        </section>
+        <section>
+            <div class="container">
+                <div class="section_header">
+                    <h2>Popular People 2022</h2>
+                    <span></span>
+                </div>
+                <div class="view_all_btn">
+                    <a href="#">View all</a>
+                </div>
+            </div>
+            <div class="slider_main_container">
+                <svg class="slider_svg" width="15" height="29" viewBox="0 0 15 29" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1.83468 10.1092L11.433 0.602298C11.8248 0.216529 12.3548 0 12.9072 0C13.4596 0 13.9896 0.216529 14.3814 0.602298C14.5774 0.794845 14.733 1.02392 14.8392 1.27632C14.9453 1.52872 15 1.79944 15 2.07287C15 2.3463 14.9453 2.61702 14.8392 2.86942C14.733 3.12181 14.5774 3.35089 14.3814 3.54344L4.76225 13.0297C4.56626 13.2222 4.41069 13.4513 4.30453 13.7037C4.19836 13.9561 4.1437 14.2268 4.1437 14.5002C4.1437 14.7737 4.19836 15.0444 4.30453 15.2968C4.41069 15.5492 4.56626 15.7783 4.76225 15.9708L14.3814 25.457C14.7752 25.8443 14.9975 26.3707 14.9995 26.9203C15.0015 27.4699 14.7829 27.9978 14.3919 28.3878C14.0009 28.7778 13.4695 28.998 12.9146 29C12.3597 29.0019 11.8267 28.7854 11.433 28.3982L1.83468 18.8912C0.659876 17.7262 0 16.1469 0 14.5002C0 12.8536 0.659876 11.2743 1.83468 10.1092Z"
+                        fill="white" fill-opacity="0.52" />
+                </svg>
+                <div class="slider_inner_container">
+                    <div class="slider_card">
+                        <div class="slider_img_container">
+                            <img src="https://avatars.mds.yandex.net/i?id=28b4daecbf5d1c85aef8b93bdee8bac6-5231317-images-thumbs&n=13"
+                                alt="">
+                            <span>New</span>
+                        </div>
+                        <h3 class="card_title"></h3>
+
+                    </div>
+                    <div class="slider_card">
+                        <div class="slider_img_container">
+                            <img src="https://avatars.mds.yandex.net/i?id=4f4eb44f7c498d97b4ea11e98da28519-5473490-images-thumbs&n=13"
+                                alt="">
+                            <span>New</span>
+                        </div>
+                        <h3 class="card_title">The 355</h3>
+
+                    </div>
+                    <div class="slider_card">
+                        <div class="slider_img_container">
+                            <img src="https://avatars.mds.yandex.net/i?id=373c0c5a9312d0ca529a48d3fef6421a-5916168-images-thumbs&n=13"
+                                alt="">
+                            <span>New</span>
+                        </div>
+                        <h3 class="card_title">The 355</h3>
+
+                    </div>
+                    <div class="slider_card">
+                        <div class="slider_img_container">
+                            <img src="https://avatars.mds.yandex.net/i?id=1ba49ce4c28dceb7094546867bc9a804-5268626-images-thumbs&n=13"
+                                alt="">
+                            <span>New</span>
+                        </div>
+                        <h3 class="card_title">The 355</h3>
+
+                    </div>
+                </div>
+                <svg class="slider_svg" width="15" height="29" viewBox="0 0 15 29" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13.1653 10.1092L3.56705 0.602298C3.17525 0.216529 2.64524 0 2.0928 0C1.54035 0 1.01035 0.216529 0.618552 0.602298C0.422554 0.794845 0.266987 1.02392 0.160823 1.27632C0.0546589 1.52872 0 1.79944 0 2.07287C0 2.3463 0.0546589 2.61702 0.160823 2.86942C0.266987 3.12181 0.422554 3.35089 0.618552 3.54344L10.2377 13.0297C10.4337 13.2222 10.5893 13.4513 10.6955 13.7037C10.8016 13.9561 10.8563 14.2268 10.8563 14.5002C10.8563 14.7737 10.8016 15.0444 10.6955 15.2968C10.5893 15.5492 10.4337 15.7783 10.2377 15.9708L0.618552 25.457C0.224785 25.8443 0.00246735 26.3707 0.000506541 26.9203C-0.00145427 27.4699 0.217104 27.9978 0.608098 28.3878C0.999093 28.7778 1.5305 28.998 2.08541 29C2.64032 29.0019 3.17328 28.7854 3.56705 28.3982L13.1653 18.8912C14.3401 17.7262 15 16.1469 15 14.5002C15 12.8536 14.3401 11.2743 13.1653 10.1092Z"
+                        fill="white" fill-opacity="0.52" />
+                </svg>
+
+            </div>
+
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="section_header">
+                    <h2>Popular Movies 2022</h2>
+                    <span></span>
+                </div>
+                <div class="view_all_btn">
+                    <a href="#">View all</a>
+                </div>
+            </div>
+            <div class="slider_main_container">
+                <svg class="slider_svg" width="15" height="29" viewBox="0 0 15 29" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1.83468 10.1092L11.433 0.602298C11.8248 0.216529 12.3548 0 12.9072 0C13.4596 0 13.9896 0.216529 14.3814 0.602298C14.5774 0.794845 14.733 1.02392 14.8392 1.27632C14.9453 1.52872 15 1.79944 15 2.07287C15 2.3463 14.9453 2.61702 14.8392 2.86942C14.733 3.12181 14.5774 3.35089 14.3814 3.54344L4.76225 13.0297C4.56626 13.2222 4.41069 13.4513 4.30453 13.7037C4.19836 13.9561 4.1437 14.2268 4.1437 14.5002C4.1437 14.7737 4.19836 15.0444 4.30453 15.2968C4.41069 15.5492 4.56626 15.7783 4.76225 15.9708L14.3814 25.457C14.7752 25.8443 14.9975 26.3707 14.9995 26.9203C15.0015 27.4699 14.7829 27.9978 14.3919 28.3878C14.0009 28.7778 13.4695 28.998 12.9146 29C12.3597 29.0019 11.8267 28.7854 11.433 28.3982L1.83468 18.8912C0.659876 17.7262 0 16.1469 0 14.5002C0 12.8536 0.659876 11.2743 1.83468 10.1092Z"
+                        fill="white" fill-opacity="0.52" />
+                </svg>
+                <div class="slider_inner_container">
+                    <div class="slider_card">
+                        <div class="slider_img_container">
+                            <img src="https://avatars.mds.yandex.net/i?id=d35b1ac53d8232fb3058bab899697c68-5859283-images-thumbs&n=13"
+                                alt="">
+                            <span>New</span>
+                        </div>
+                        <h3 class="card_title">The 355</h3>
+
+                    </div>
+                    <div class="slider_card">
+                        <div class="slider_img_container">
+                            <img src="https://avatars.mds.yandex.net/i?id=e9a8ebd7216408693a8dceecdaeaa646-5877892-images-thumbs&n=13"
+                                alt="">
+                            <span>New</span>
+                        </div>
+                        <h3 class="card_title">The 355</h3>
+
+                    </div>
+                    <div class="slider_card">
+                        <div class="slider_img_container">
+                            <img src="data:image/jpeg;base64,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"
+                                , alt="">
+                            <span>New</span>
+                        </div>
+                        <h3 class="card_title">The 355</h3>
+
+                    </div>
+                    <div class="slider_card">
+                        <div class="slider_img_container">
+                            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgWFRUZGBgaGh0cHBwcHBwZGh4eHhwjGhwcHBwcIS4lHCErIRoaJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHhISGjQrISs0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAP4AxwMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAFBgMEAAECBwj/xABEEAACAAQDAwkFBQcDAwUAAAABAgADBBESITEFQVEGImFxgZGhscETMlLR8EJicoKiBxQjJLLh8RUzkmPC4iU0RKPS/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QAIhEBAQACAgMAAgMBAAAAAAAAAAECESExAxJBIjITUWFx/9oADAMBAAIRAxEAPwB/kbWm4clRu8GOX2q596Uw6jeN0ezrpcP3j1jHpXGhB7Y5b7f204U6iuRviXrEAdtcp6anZUd8TsRZVHugm12Oi+cGdszTKkTZjc0IjNiyNrLllxvHzszE6kknMneTvJO8xWGHtzRctdPfZW2Jamzow6rH5RO+3ZAyu2f3bfRjz+lqy8qW5ObIL9YGfjExJs3V5j+0bTx4ls6ttaURcMT1AxTm7SXcCe6E5ZxBFjuziVK5heD+LEew+NsIfsmNf6kh0W51zO7uhYnV2EE8L/Riu812mIwAFlJJByIOnlB/Fj/Q9qZ59ShzZFO7PPzijNr0UjCovoBr2Z6QMqS7HWy5/wCY4VANO8/WUXMZOoVq5/q73sAACLghQD0g5axyauY1s4gCjj3R0p+vmIeiTComfEwJ0GIgeBiZZ7kC9u0BvFgYiL2EcXY77QyXVqytudnwCJ/+YtrtWZ9kle7ytAhRbTXxi1LyGcKnBRNrT7e+PzKD5WixS7VZv9xUI3soII6Spvl29kBXO8xNKe2E8YXrL8OZUzTUG646iRGAt8Z7bN5xJsoO8vIhsJtnqBqBn0ZdkTNJf7SA9VvQxjZJV7BdsT3SS7jCxVDutrlu64cZtko5zBQCZTXIABJwWFzv4Qq7clj2DgqVuLXztmemCXKDa+ELRhTinp7+VlW9jlvMXims5NA/6ZTDiCf1MYyLexZVqGkUZjAPIm8aiidU9eipY3F+BiNqxTo5i1RbNTALknrJjiqkqmaqO4RxX27bTGUtcsaKdU05kyWF3ZS2IlVwqcWud8wuVoVqHkLLlrint7R/hF1QereA6IeKjaAAMLdftgEkAw8fJdajSeGd0KaSqAIBYKSABpYi/rGLMuD+AA98UamrzLHQ/wCI5FUDcYr5Ad+4/W6OvG3Uc+Wt1Mp1vHBfLr3xy4yjmY9iBqLXitpDdo1GEEccj6xf2V7ge5tbK+4Dd1Qv1k3HMsu8gdZ0vDBPsksINcNv8w5SSLOY3OTDO3yjbzDll1xTlMVFmNumInrs7L3wbJfaeq30vrbfGJOL5e6eG+3H64RQSxtjzLeHSIkWZnztdzDK8GwJy3tYHjb68YmL+cUJc/PPWJVm6QBdBiVG4xSSZHc+pCKSdwv8u2GE1fOAVVHvMbADWLWLQZZDytC5QVDPPBcXa1+hBu7TBvidMoDhp5PVhV8IOTqe9c/InuhhNQeuESgn2KEHMOO480+cNZZ+IMYeTiqivymnEyCvxMg72EVeUR/9Ql21SmLeLH0jjb01rSVI9+ei+JPpFXlWxFdNYEjBSE/pcw8OhTjsaX/K0a/9JT+iNRb2fLstKnCUPBAI3FlsAk7aGmLKJKraQZdY84/eHFszFulnTGysY87KZSdvSmOO+It1tSedCrV1XOPbDHtKncLcqQOMJNe5xhRrcxr4MeGfny0uuSyrbdYtuNt+W8QMqqoi4U5k3PQNw+uMWVr1KFSLuBhW1yenSOKLk/OmnIYQTv8AlHVbJ24tXLpZ2VXFgFbMjQxHtirOMga8QdMoK0/JGoQh1dGO9cx4wK2psKpRmZpZa5vzTiAv1Qpnjfp3DKTpRoEYOGA903grWbRCm9ucd31pAqRLfCzBWJHTZV6TfXqiM0k33ijm+d7E3i9o0sPVFjdj1cBGe2GuV/q0RLs6eQWEp7DWyk/3imH3QAT/AHo6RMlVlYjqgNjMSoxOeg3/AFxgIZWq4nLjEhrCOo/XfAMz+6N/vRsQOy+6GBeprwxREOZIudMOekW6+s52BLO+VhuH3m6uELkhyDddeP1qYObElKAWY2N8ydT2w4Qls6QEFybsxzO9jBRFODPXfFFp8tDdnA4C+kEKGrlTVYIwJtxzhqiWjW4PVfuz9Ieyi9IhDoW9frxh+lXKqb6gHwjLyHALbcu86jAP/wAgEjqRoF8p3Bq60/DTBf0f+UG9oITVUYtpMc36k/vC9tcK9XXXtc+zQDK+ZRcu+DHoV6hJX+JLX4ZfpaMjE/3+qX6iMig8lp5YNoZdnUyAXYQuS2tHdVtfCuTWtHlyXKvWz4nYzyn21LlSmQ8+4tbK46rawgbM5NtObHMJUNmFGtunhFmgU1Mz2j5op5oO872hxolGQjTLO4fjj2xmEzntevils7k1LQDCoHTqe+DVNsqxi7TnOCMtgYJu91OV1xIip6FbaRP/AKavCLNO4MWQY0mM0zuVJu3+SKTRiQBHGYNuaSNMa748o2olRLnMky+O+/f09UfQ01Lwl8tOT/tU9oi3mS8+ll3jr4RWGXrdXpGU3Nzt5/SNULZkdW+61x3NaGLZ601UCk6QA9wGuoV1YjcwzIPG8AaeoRffYiLtLXIJy4Tz72B0HHCT4x03HjbnmfOq1tj9nxAL0r4vuMQD+VtD1HvhMnUM1SVaU6lb3BVri2pOXjHvkhr54b3z784nniWyOroQpRgTnoQbxlj5L9VcXzlGhG7d0Yq3jZC1TOMyQQBv4HdFumczGCr27j1gRSSnGV2tBDZ2BA5zxAG2YHzhkJ0ezVGL2lmJuBvt2xxsGleWcVsOdrnh1b4u0E9GNlTCbg3sTbO/vGLkpr55f4OUM4sUjkn8wv3GH6lmfw0P3F8oQdmjnfmhzpk5iWYjmjf0Rn5elRkxyamn6BMP6QPWB/L+nRptBzVxmepJAAJzXU79I5qHmtU4JbhWWQ7qxF7MzqvkD3xrlZiNTQLe7Bwb6XI39GkGPQvZ4Rv4j9CL5iNRXDZzTvso8RGQw8nq5LIMnuOnXvhTrqtnbCDrlE+19sM5KobL5xR2YOepPGMvHhccd5dt/L5JllrHo97IkYUVRuEGaZ7GA1JMG7SCSGODOX327sLPSQZp6oA5wVlPAKklAi94OUrDIaxeO2ecnxakKd0EUXviGQgAPeImkNxjbGaYZXaxgyilVJaCLZiKNUpMXnOEY9vGuX+xCk7HLHNfPDwP2rQM2BQN7QFwBhu9uJtYX4AXh6/aClpJYGxAuDCryTk+0cLmxJDO2furmB1fMxeGX4M8sfy/x6fTSLC2LtjNst7OmnuWFllPfj7h0iemQiFf9qG1sFJ7G/OnMAB91SGY9Wi/miMZujKvHJY3RY/dX+G44jOKxi/Q1diATh6d3bHSyYkoAc7OL1Aih8KqOcCPWLUpAw90E/RiWWmEqdLGKkJKiPfPQA5bot0yWUZWyjGGt9M47Rcu6GcWtmDP83pD3QqfZS8h7i+UI+yxmL7yY9EpaYCWg4Iu/oEZeTpUAKRL7QmZWw06DvdjEHKDPaNGvAE9wYwR2fIP7/UE6eylW/5PfyihtQX2tTj4ZbH9J+cKdQXszh7CafvKIyOAbq/S48jGRQfOBMd00yxvEbiO5UNMOWxqjELQy0iXhW2AllxcTDJJqyosNTHB5Z+XD0fFb68ieAqeaeyL9I7XFxYQvTdoOBzFHWSB4mAldygmo5GpG8G48DBjhb0MstdvWBVCwsbc9VPUQY42ftAY3RrAoxHRlvhE5K1k2pdcTWUG4Ft/HWD3LCjeXimoxzALbs7awW5S/wDCkxvG+zsKhNzL3xqeVIuCI8So9rzFYYvaEE/ZVmHlHoeydpSnshxI+gxYhc9sbXK9WMrh9lCP2iyi8kIupv6fOKXJrZqogVScVs2GRJ3wa5W0EyZ7NZa3Yk6mwAFiSe6INjTyBhK2KmxGR0iLeNJyn0RSS40mMO2PIeW20WnVb3Yssv8AhqfwnnfqLdwj3dACPcz3ZR81zwwdsXvYmxfivzvG8a+LGS7ZZVpRnGykcxPLa4YngB3kegMbs1jZ1eUIDe7x4fMQ2SEWYgK2MKdNJDZHPP6IMXKeZMpjjTnJlccPlDhGEraJMV/CLNJPl1CY07RvHZFZ1sTFGubMW5QdJj0AT1tYEZdMIuwlxTEFt+kOX7txTwjHy28KjWyRepnngkof1n1gRPz2z+GUfICL3I7ObWMBl7cIPyIoPjeKNNztsTz8Mq3io9IeM/GC9mCnPN63P9MZG6bRfxMfSMhh88SpZdwoNrnU7hvPdBP/AEQ4cctw62vwPVaKezv91Ad9x3qQPMQ20krCqKAbsLWt0XudwjPPK49NfFhMpduOTkv+Ct+JtBOdTTWHMABtqcgIq7PewK/CxHcbQwU05bZ59EcuWWsrXXjj+MkLEzk8W/3mmOeuy9gGQiQ7CXKyWsLC5Jt6Q4oVb7I8Iq18wKsP+TLXYnjm+Y65LU3s2FhlpDxVU4cC+8QnbNdkN2sBDnRTw6AgiDDncrPy8WWAqcnwjXVjbgbHxtByVSqRzhcgb/nEYqASVbJgf8QRluApMbYY4/GeeWV7Lm3DZHw3BwMBx0N4TaOeVqHUFssOQztzAT4w9V7KWUH7TYT1EZ+F48WfahFZNe9rzX7sZA8LRnMPbK08stYyf69N2tyhFLTNNcnEOaikWxOdF8LnoBjw2rqWmO8x7Y3ZnawsLsbmwGmZhq5c7bSekqWrlmRmLADmi6ga72Ft3Ewmgx0ePHWLnyvLqJV93rbyH/lEJMTuLKnTiPebeQEaIWKN7QfpiLW3EDuhdp38oP0bZDs8ocKq1Sj0swTpN8BPOXd1HohlnTUmIk1NHGY4RUaWHQqRcG474q8nwwlOh+w5A6s4f04auS0u865+yCfQQ44h8Rhf5Fpk7kHQKPM+kMzOvDwjDyfsqBPIUXWobXFVTDfqIX0gdsI4tpVrcFt+o/KDPIySFlNY5GfOP/2N8oB8kGxVNe/So/qMaTqC/TNJXmp1MfERkYpGFfwebRkBvncnCQwOYIPdnD/TtcrMXMYd268IM4dEGdibaVFwTL4dxGdhwNoy8uNym408Ocxur9FROwzH4Fr9/wDmCsqfAKpqEZw0sgqV7joYtyZ32Sch6+cZZYbkbY56thlpag2yiCsRnyERUrgDX0iQVQsSLZ6Rj63bo9poEnvUtOwh8I4buu+sN+yZEwIye2ZWvYslrDiM8+3KA9NJxOGYhBfU5Qx0CIjMWmqMZuDe/iNIvKzhnN6o1+6EAMHLEAAk6mwtcwUk3KZwGDgZh1K9Y+cWZNTdSAcvSLx1OmOVt7QV1SqOjOwVVxlmJtayMY+fJsy7s2I5szX35kmPVP2im9K34ksPzDgOuPJXmbo18c7rLyXqOGOfrHJjqMKxsycGLlK2NSh11U9IGYPXFW24xhBBvAS5KQjrEG6PK31ugZIHtbkZNYX6xFqgcjI6gkQ4VH5LcY5oksG6Wjmka4+t0X6ClxuiD7TAeOcUIcdiWlyFGFrnnE246eFouGpB3N3RYMoWsGyGWkQVCWRiG0Unwjkytt20ivyU2jLweyVruqvMIsbWd2YG/TrAbkQ2VWx3zAO5f7wf5MWWhQkZ+w13+6T6wvcih/Lz2+Kc3gAI3hG5R7o+4vqYyMpzzh1AfpjIBt4BPpJgzMt/+LfKKbS2GqsOsER6pVDKF6ul65QpRYV9lta/QR4/4g6hvnfPL0gO72m4OII7dV8R4xYpaqxKtCyi8bwYKafe4+u2J0TEhs4Dbgc++AIqrEkf2vFjZ9bzzn1Zxllje42xynGxOVst3cNMnE/dUWFuFyDDJTUlOLKznh7zeloF0iltct8E6fZ9zckDsjmytt1XVLJOByTyfp8N1x3OfvMoB784jkAoXTXPXiOiLMt8Iw3zgVUzSJmedyNfKNJPunPlbbzS9+0mqApkS/vuP086PNyDYHJgdCderiD0Q3/tDVnWXOucBd0A6QNfBh2Qm000C4bNTr0Hcw6R846vH+rm8n7OggOhseDfMfKLVLIYZtKZ0OuEYh2EZXiubrY5MO8Q0bO2jKKIiBrkDEmFiA18iGPz3xaAp9jBhdGYp0qca9anMiKdXs9lYKSMVub8LjipO+/2TDJV1LSmUFLnLMNvPC8WMMupTAy2JfCu84zfMEae6YYJspmltjUEFTZlOoPSOBg1VSgQlRL9xyA44HfeK9RIMtrTcwObiOZAOgb4kO46jTUR3TH2LFGuZE3I53wtuIO/cQd46QYCGdkNfEOBv3w48mKXn4yL4Rlfi2XkDCTsVCk4odxsfQ90eybB2AvsELMwZhiNrW6NRw84Mt+vAis7/dHhFPaD/wAN7LojafhMMb8n0+N/0/KBO29liVJd1csVUmxAse6Of0q5YHbOfDQp0U4/ogJyO/8AZk/FNc/qgvPbDRkcJIH6LQK5ID+Sl9LMe9zGxGyk9/6+GMjdEeee30EZDSQ6l2t7vjAOsc/D4ww1IFoB1iiJkWSK5z7RjoQRbsi3OAcY1359u+KVWbux4k+ccy55UWEOwpVpao6GO5U4KbjX63xQZ7xr2h4waGzps7bGmI5jphwlbXUoDf00jx9Kkg3gj/rDFAh431jHLxb6bY+bU1XrS7SRl1FyNYEVFSWcIhuSd4HTnlCjsUVE7my7gZC4GQ62P94PHaEqjNifaTCCDnku/U+J6In11wv2l5V/2mT1WXT04OYJc9AC4R3kkx56jWzEX9t7SNRNMxjcn6y4CB6xvhNY6c2d3lwJ0NTe4ZUtxwgEndkLQaEkPzA2C1mBysCdBCvIU3ytfpgnLqZiEXQ52I36aWvr3xaTHXy8aoXB5mbkEXy0Ivu6YpSLNMljPX2r3sLXuFtbdmx7RFqnqsSMWPvKWJF1sg1sDxta3XA+kr0RsUxSBOuQRkFAsFGmcFOD+1ZZNslY2OEnRxqUfjcb9xsd14EvQp7IlLtKOqt7yG+Y6LHuNjpe5gSsaYC1t6MNx3EGKiVRS5deaTgmrqATkHtwI7oZIeT6F3l3OIhxLJ3kXst+BtcH8MfRCqAABoBbujwXkzst0rJRBDI8xAT0qwZH7VFj034x73CocOYWuV9RalnfgI78vWGCpfKE7lo16Zl+N0T/AJOo8oV6Odhu3nw0szolgeQipyZW1JTjoB7zeM5XzLUkzqAiTYi2kUw+4v8ATeAzJs485j1+YjI1ske8ej1jUCSbU3tASuU2PVBatqlRSzkADeYTttbZDqVQWB1Y5ZdAhRVLh4GIokjJqZw0ojG4yMgDUWKV0B54J7LxBGjAIYH5ROqYJRwLxAAPVAObOZr3JN9SdT1xFGwYUxkVcre2CNiMWNiKSwQW2LOOMK2ak3wnTLU9BgUItUb2a++1oAN1sxWxBRhS2Nhcjmg81baXJvn1RNsicjo0ucgKMch8OVuadxECKmdzST9t8PDmoB62iWlm4SCIU7FuhWRMekcS5pxSmPMfd/Y8RB2okKyh7BlK2e2jLx7L/VohpXSahRwHRhmD5g7iOMR01LNpzhXFMkHfqydY39cVAvcnJ5p5yozE4WDo3xJe9uk/Mx7aWyuNDHiAlBlAU5qcSHzWPV+T1b7SmlvvC4T1rzfSCwLNU8JvK18SyV4z08Lt6Qz1UyFPlCMTU/RNv3I8TRAbltM/lW6SPWClAtlkrwQeCiAHLl/4Cji4+XrDFKFmQcE9IDHdjrzW7IyJNjDmns8oyGTxLlDXe0fADzF8W392nfC9OFjfdF97AXbdmeJPARRHPubW4DhCCLDeJChsCVyPRke2OENjBCi2iqq0uapeW3A2KH4gN5z6NNYAFzEtHMFKvZ5VQ6tjltow3fi4GBboQbGANGMiz+4vgZ8PNW18xiAJsDh1teKxhhkajIyAOowGOY2IA7ESJ6xDEqGAJqs/w5We5j3tb/tjumm8YjqhzJX4W/raK6NYwoKaNl1RUgQ40E+4BBjzWmqCDDhsesyEVCl0ZnVWFrANqGGVz0ww8j6nmOnBg1uF8j5CFvFiW41EEOTVUFnFSc3U26xmfnBVGWqmQrcoZhZ5cpWwu4cq2uGyEX72EME94WtpP/NyR/05h8UETRCttWYZxMsk2kMqknMu2JRfo1h1X3z0JCPSjFMnnc1Qg/Wvyh3Q89/wjzgFMmx15h6/QRqJdjjmdpjIaXzltU85VB3XPbkPAeMZQpfKLcylDp7QXvfL8IyHlftiCQLEQGq1UgqcxEKJe4gzWKWGcC5Qs4B6oA3RVzSibZqcmU6MPQ9MTVMwMcUtR2e8vZ6jLqiKtk2NxFRTYwgIUVXbErm6OCrb8jvHUbHsihPklGwtrx3EbiDvBjZe5zizLXGmD7QuydPxL26jpB4wwoxuMjUAbjBGRggDd47QxxGxAFypzly+guPEN/3RSMMHJ5FmB5TAc4Ylv8QyyO42PhFSv2WUYgZgC+e7cYNANR4NbJrcJsYClDwjaORAT0/Z9ViUG8T1L2KuuRUhhbiN3bmO2FHYW1NFJzhrDYltBVQ2yqpZiB0YEEbvKANYb1qDhIbxcfKKPJiYUnzJd+Y4xqODD3rdfpFyrnfzLH4JOf5mv6QqIU9iSj7QnGbNV+7u5pZv+2H2T7z/AJRCDyUmh3l8TOdv0OfWH6mNy/4gIUOmzZQ5g7fONRLsteYvVGRSHiFHJAGE74D18nA5HA3HVBn24BHVEW2ZGJA43ZHt0Pf5wzR00sOl90B9rU+Aqw0vkYP7BOJHXeAYoVyhpDjehDDsOcIKlRKut90Cp6WMM+x0DyxfhaKG09nFbkZjygAFaO1bhrG2SObQBYmDGCwFnGbW0Yb2A3MNSN+vGKcWFmFWBG7Mf38o3VSQAHT3WytrhbUqfMHeOowBWjBGRuAMjYjkR0IAubPn4HVwdD/mHmtkrMlljrhyI8Y8+Q2g3szbDIAky5l3ybhuseiHKSCZJOIC2Ikbtc/8dkSPs5GXLmkDx4WieUgZ2dT7x5ts7CCMhgwIYDm74AW5lI8prjOx1HrDjseuxoDeBc9DkRfif8xvZfNuNMyfHK8BwzS3CTUfde3fkfMxYc4qiqJ0WWi/pLesDZb4hhPYemCWxbl5zt9p18EVfSFVAPI9ExSQLYgZjEZYvdAzGv2odqMZH8ZhV2agO1JzAaS/VR6Q10XujpZoUKnXZ681R90eUZHdEMh1RkNL52nTMwwIYEc0jQ/IjhGk2uVb2bqCjAA21GL5RXeheVcqMaH3l+tD0iKdbMVucuu/ce3p6sj4QGYNgXSe0tt9x1/Qzinjs8xDxYRf2VaYZUwe8owP2ZC8Cdqc2ofpMBrvJ483DwJ84J7UTIDjArk/m7Dp+UH9oyCyZaiH8E6JdVT4SeHGKbjPLSLe0adlbO8V0SETl5d0DcGwntzEbppgF1f3GyPRwYdIPhcb4tU6XWYu/CHH5Tnfozim6QgjnSyrFTqOGh3gjiCM+2OIuWxpb7csEjiU1K/l1HRi4CKQhhuNiN2jREAbUwY2UQQysL5Xt4H0gKII7LmWdbmwNx3iwv0XtBCTUkkBhYstzbI69YOUFPbCU2FyAHGR3Hr4GLVNs8oFxC7AZ9e+0cbWpPaL0jTKGNIMZxDCezoi6oU/Pf8A4hTSZMktbwOnZwg7s2vR7AGxGqnXrHGA4NSyRrv0g3smbe433BPlAAPkQfoxYpKrAwtmbdhvCUk2AcVfVNwUDxPyhtoBzU7fOFHkvIZZ1UzkYmVGy3XBNoctnL7g6vOAqdqUZRkdUwyjISXhOEgcRAXbWzRYzEyt7w6OMaodtsGCOLm9rj5GCczaIE32LrmdCpuCDxBtbxhqCOTFVhcodDn2iOdv5VD/AIr+ERzKf2NUFBuL3HVwMZtlrz36wP0iAl3k+f4jQ1Em0KXJo/xHPZDahyhxULW1JQLhYGtT6W0va8FOUKkNiBzBgXJqiQysBlZrjLO8CampZRDrc2BJQ9oI03i4HfFR6c792XaMoLzyLuRcYbMOzC3z74mqaMXmLlzXuLDLMA6btYX0fC4hKsGGoO/TqMQ1koKxC+6bMv4TmB2ZjrUxcnprENULy0PwsR2MMQ7irf8AKGFQRzeOkMacQg1EiGIo7XWAjFsXb+ECVON1GStvUcG6OndDBNlg2ZTcG3VHnk3WCOx9sPJOE3ZDqN4tvHy8tYN6MZ2tJvMQWyO/0iltSiUc9eawIzGXblDPMkq4BtYgnvgXtGnumv0IY0t7B2ZUzbIwRtCrXsG6DlrBteTE+5AwFr2ChwW37rXvk3ceEC9nbfeQgAUMMhY5jS3kTBiTypaw/hJ3Q5oc/BDZXJ2agmFsIZ8IALZkqLWF9crZQw0OypislwMsN/OFml5QYjYyk7uj5ZQ0bPqVaYo9mguQb23gXBg4LkzywVFyI3EUlFHui19YyID/2Q=="
+                                , alt="">
+                            <span>New</span>
+                        </div>
+                        <h3 class="card_title">The 355</h3>
+
+                    </div>
+                </div>
+                <svg class="slider_svg" width="15" height="29" viewBox="0 0 15 29" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13.1653 10.1092L3.56705 0.602298C3.17525 0.216529 2.64524 0 2.0928 0C1.54035 0 1.01035 0.216529 0.618552 0.602298C0.422554 0.794845 0.266987 1.02392 0.160823 1.27632C0.0546589 1.52872 0 1.79944 0 2.07287C0 2.3463 0.0546589 2.61702 0.160823 2.86942C0.266987 3.12181 0.422554 3.35089 0.618552 3.54344L10.2377 13.0297C10.4337 13.2222 10.5893 13.4513 10.6955 13.7037C10.8016 13.9561 10.8563 14.2268 10.8563 14.5002C10.8563 14.7737 10.8016 15.0444 10.6955 15.2968C10.5893 15.5492 10.4337 15.7783 10.2377 15.9708L0.618552 25.457C0.224785 25.8443 0.00246735 26.3707 0.000506541 26.9203C-0.00145427 27.4699 0.217104 27.9978 0.608098 28.3878C0.999093 28.7778 1.5305 28.998 2.08541 29C2.64032 29.0019 3.17328 28.7854 3.56705 28.3982L13.1653 18.8912C14.3401 17.7262 15 16.1469 15 14.5002C15 12.8536 14.3401 11.2743 13.1653 10.1092Z"
+                        fill="white" fill-opacity="0.52" />
+                </svg>
+
+            </div>
+        </section>
+    </main>
+    <!-- <footer>
+        <div class="footer_container row">
+            <img src="./img/Logo.png" alt="">
+            <nav class="footer_nav">
+                <ul>
+                    <li><a href="#">Tv Shows</li>
+                    <li><a href="#">Movies</li>
+                    <li><a href="#">Upcoming</li>
+                    <li><a href="#">Trailers</li>
+                    <li><a href="#">My list</li>
+
+                </ul>
+            </nav>
+            <ul class="footter_socials">
+                <li>
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16 0C24.8306 0 32 7.16938 32 16C32 24.8306 24.8306 32 16 32C7.16938 32 0 24.8306 0 16C0 7.16938 7.16938 0 16 0ZM25.5822 11.1861C25.3522 10.3256 24.6746 9.648 23.8141 9.418C22.2542 9 16 9 16 9C16 9 9.74581 9 8.18594 9.418C7.32563 9.648 6.64781 10.3256 6.41781 11.1861C6 12.7458 6 16.0001 6 16.0001C6 16.0001 6 19.2543 6.41781 20.8139C6.64781 21.6744 7.32563 22.3523 8.18594 22.5822C9.74581 23 16 23 16 23C16 23 22.2542 23 23.8141 22.5822C24.6746 22.3523 25.3522 21.6744 25.5822 20.8139C26 19.2543 26 16.0001 26 16.0001C26 16.0001 26 12.7458 25.5822 11.1861ZM13.9999 19.0002V13.0001L19.196 16.0001L13.9999 19.0002Z"
+                            fill="#8B8B8B" />
+                    </svg>
+
+                </li>
+                <li>
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16 0C24.8306 0 32 7.16938 32 16C32 24.8306 24.8306 32 16 32C7.16938 32 0 24.8306 0 16C0 7.16938 7.16938 0 16 0ZM16 6C13.2842 6 12.9436 6.0115 11.877 6.06019C10.8126 6.10875 10.0857 6.27781 9.44956 6.525C8.792 6.78056 8.23431 7.1225 7.67837 7.67844C7.12244 8.23438 6.7805 8.79206 6.52494 9.44963C6.27775 10.0857 6.10875 10.8126 6.06012 11.877C6.0115 12.9436 6 13.2842 6 16C6 18.7158 6.0115 19.0564 6.06012 20.123C6.10875 21.1874 6.27775 21.9143 6.52494 22.5504C6.7805 23.2079 7.12244 23.7656 7.67837 24.3216C8.23431 24.8776 8.792 25.2195 9.44956 25.4751C10.0857 25.7222 10.8126 25.8912 11.877 25.9398C12.9436 25.9885 13.2842 26 16 26C18.7158 26 19.0564 25.9885 20.123 25.9398C21.1874 25.8912 21.9143 25.7222 22.5504 25.4751C23.2079 25.2195 23.7656 24.8776 24.3216 24.3216C24.8776 23.7656 25.2195 23.2079 25.4751 22.5504C25.7222 21.9143 25.8912 21.1874 25.9398 20.123C25.9885 19.0564 26 18.7158 26 16C26 13.2842 25.9885 12.9436 25.9398 11.877C25.8912 10.8126 25.7222 10.0857 25.4751 9.44963C25.2195 8.79206 24.8776 8.23438 24.3216 7.67844C23.7656 7.1225 23.2079 6.78056 22.5504 6.525C21.9143 6.27781 21.1874 6.10875 20.123 6.06019C19.0564 6.0115 18.7158 6 16 6ZM16 7.80181C18.6701 7.80181 18.9864 7.812 20.0409 7.86013C21.0159 7.90462 21.5453 8.0675 21.8977 8.20444C22.3645 8.38581 22.6976 8.60256 23.0475 8.9525C23.3975 9.30238 23.6142 9.63556 23.7956 10.1023C23.9325 10.4547 24.0954 10.9841 24.1399 11.9591C24.188 13.0136 24.1982 13.3299 24.1982 16C24.1982 18.6701 24.188 18.9864 24.1399 20.0409C24.0954 21.0159 23.9325 21.5453 23.7956 21.8977C23.6142 22.3645 23.3975 22.6976 23.0475 23.0475C22.6976 23.3975 22.3645 23.6142 21.8977 23.7956C21.5453 23.9325 21.0159 24.0954 20.0409 24.1399C18.9866 24.188 18.6703 24.1982 16 24.1982C13.3297 24.1982 13.0135 24.188 11.9591 24.1399C10.9841 24.0954 10.4547 23.9325 10.1023 23.7956C9.6355 23.6142 9.30237 23.3975 8.95244 23.0475C8.6025 22.6976 8.38581 22.3645 8.20444 21.8977C8.0675 21.5453 7.90456 21.0159 7.86006 20.0409C7.81194 18.9864 7.80181 18.6701 7.80181 16C7.80181 13.3299 7.81194 13.0136 7.86006 11.9591C7.90456 10.9841 8.0675 10.4547 8.20444 10.1023C8.38581 9.63556 8.6025 9.30238 8.95244 8.9525C9.30237 8.60256 9.6355 8.38581 10.1023 8.20444C10.4547 8.0675 10.9841 7.90462 11.9591 7.86013C13.0136 7.812 13.3299 7.80181 16 7.80181ZM16 10.8649C13.1639 10.8649 10.8649 13.1639 10.8649 16C10.8649 18.8361 13.1639 21.1351 16 21.1351C18.8361 21.1351 21.1351 18.8361 21.1351 16C21.1351 13.1639 18.8361 10.8649 16 10.8649ZM16 19.3333C14.1591 19.3333 12.6667 17.8409 12.6667 16C12.6667 14.1591 14.1591 12.6667 16 12.6667C17.8409 12.6667 19.3333 14.1591 19.3333 16C19.3333 17.8409 17.8409 19.3333 16 19.3333ZM22.5381 10.662C22.5381 11.3247 22.0007 11.8619 21.338 11.8619C20.6753 11.8619 20.1381 11.3247 20.1381 10.662C20.1381 9.99925 20.6753 9.462 21.338 9.462C22.0007 9.462 22.5381 9.99925 22.5381 10.662Z"
+                            fill="#8B8B8B" />
+                    </svg>
+
+                </li>
+                <li>
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16 0C7.164 0 0 7.164 0 16C0 24.836 7.164 32 16 32C24.836 32 32 24.836 32 16C32 7.164 24.836 0 16 0ZM19.488 15.999H17.249V24.123H13.892V16H12.215V13.2H13.892V11.519C13.892 9.235 14.839 7.877 17.529 7.877H19.769V10.677H18.369C17.322 10.677 17.252 11.069 17.252 11.798L17.249 13.2H19.785L19.488 15.999Z"
+                            fill="#8B8B8B" />
+                    </svg>
+                </li>
+                <li>
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16 0C24.8306 0 32 7.16938 32 16C32 24.8306 24.8306 32 16 32C7.16938 32 0 24.8306 0 16C0 7.16938 7.16938 0 16 0ZM13.1818 24.5099C20.262 24.5099 24.1333 18.643 24.1333 13.5584C24.1333 13.3908 24.1333 13.2232 24.1253 13.0635C24.8756 12.5208 25.5302 11.8422 26.049 11.068C25.3626 11.3713 24.6202 11.5789 23.8379 11.6746C24.6362 11.1957 25.2428 10.4454 25.5302 9.54344C24.7878 9.98244 23.9657 10.3017 23.0876 10.4773C22.3852 9.727 21.3874 9.26406 20.2779 9.26406C18.1547 9.26406 16.4306 10.9882 16.4306 13.1114C16.4306 13.4148 16.4625 13.7101 16.5343 13.9894C13.3335 13.8298 10.4998 12.2972 8.60013 9.96644C8.27281 10.5332 8.08125 11.1957 8.08125 11.8981C8.08125 13.2311 8.75975 14.4125 9.79744 15.0989C9.16681 15.083 8.57613 14.9074 8.05731 14.6201V14.6679C8.05731 16.5357 9.38231 18.0843 11.1464 18.4435C10.8271 18.5312 10.4839 18.5792 10.1327 18.5792C9.88519 18.5792 9.64575 18.5553 9.40631 18.5073C9.89319 20.0399 11.314 21.1494 12.9983 21.1813C11.6812 22.2111 10.0209 22.8257 8.21694 22.8257C7.90562 22.8257 7.60231 22.8097 7.299 22.7698C8.98325 23.8713 11.0107 24.5099 13.1818 24.5099Z"
+                            fill="#8B8B8B" />
+                    </svg>
+                </li>
+            </ul>
+        </div>
+        <div class="foter_image">
+            <img src="./img/280ae31b-5ec7-46e0-ba15-8fb88eac4bc9.png" alt="">
+            <img src="./img/36c3e723-bfa0-4b28-8c26-5a07650be418.png" alt="">
+        </div>
+    </footer> -->
+    <script src="egelo.js"></script>
+</body>
+
+</html>
